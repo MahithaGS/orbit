@@ -1,0 +1,5 @@
+data/local-config.json
+data/state.json
+node_modules/
+
+data/profile.json
