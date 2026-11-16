@@ -27,7 +27,7 @@ Open **Setup** in the app:
 
 1. Add a Brave Search API key. The server keeps it in `data/local-config.json`, which is excluded from Git and never sent to the browser.
 2. To enable manual Notion saves, create a Notion internal integration, grant it read/insert content access, and share the existing **Application Pipeline** database with it.
-3. Paste the integration token. The data source ID is prefilled for the existing Application Pipeline; use **Test Notion** before saving jobs.
+3. Paste the integration token and your Notion data source ID, then use **Test Notion** before saving jobs.
 4. Run a search. Review and select the jobs you want, then click **Add selected to Notion**. The daily switch schedules discovery only; it never saves jobs automatically.
 
 The app uses the Notion API directly. Set your own Notion data source ID in Setup. The Notion connection already available to the assistant cannot be reused as an API token by a standalone local website.
