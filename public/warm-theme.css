@@ -1,0 +1,32 @@
+:root{
+  --bg:#f2eadc;
+  --panel:#fbf7ef;
+  --panel2:#eee2d0;
+  --line:#d8c9b5;
+  --text:#35271f;
+  --muted:#837366;
+  --violet:#92613f;
+  --mint:#68784e;
+  --blue:#8f684b;
+  --yellow:#a77a3f;
+  --red:#a85e49;
+}
+body{background:var(--bg);color:var(--text)}
+.sidebar{background:#e7dac7;border-color:#d5c3ac}
+.brand{color:#39291f}.brand-mark{color:#fff8ed;background:linear-gradient(145deg,#aa805b,#765138);box-shadow:0 0 22px #8c644033}.brand-dot{color:#936541}.brand small{color:#8c7968}
+.nav-label{color:#968472}.nav-item{color:#756456}.nav-item>span{color:#927b65}.nav-item.active{background:#d6c3aa;color:#503925}.nav-item.active>span{color:#805638}.nav-item b{color:#566441;background:#dce2cc}
+.sidebar-card{background:#f3eadc;border-color:#d8c8b1;color:#503c2d}.sidebar-card p{color:#887565}.salary-tag{color:#79552f;background:#e9dcc4}
+.sidebar-foot{border-color:#d4c3ac}.sidebar-foot small{color:#8b7b6a}.icon-btn{color:#795f49}.avatar,.profile-avatar{color:#fffaf1;background:linear-gradient(145deg,#a77c59,#70503a)}
+.topbar{border-color:#d9cbb7}.breadcrumb{color:#8b7b6c}.breadcrumb span{color:#b3a18c}.breadcrumb b{color:#4d392b}.today{color:#8b7968}.outline-btn{border-color:#cdbca6;background:#faf5eb;color:#624a37}.outline-btn:hover{border-color:#9a714f;color:#4d3424}
+.eyebrow{color:#8b6242}.pulse{background:#a7744d;box-shadow:0 0 8px #a7744d66}.welcome h1{color:#3a2a20}.welcome h1 em{color:#8b5d3c}.welcome-copy>p{color:#796b5e}
+.primary-btn{background:linear-gradient(110deg,#9c704d,#765138);color:#fff8ef;box-shadow:0 6px 18px #77523824}.primary-btn:hover{filter:brightness(1.06)}.text-btn{color:#775f4b}.text-btn span{color:#8f684b}
+.orbit{border-color:#a88d7066}.planet{background:radial-gradient(circle at 35% 25%,#d9b990,#a47750 60%,#76533b);box-shadow:inset -12px -15px 22px #533a2b55,0 0 50px #9b765044;color:#fff8ec}.planet i,.spark{color:#8e633f}.orbit-caption{color:#947f69}.orbit-caption b{color:#805638}
+.deadline{border-color:#d1c0aa;color:#867564}.deadline>span{color:#927e69}.deadline>b{color:#4a3425}.deadline>b small{color:#91613e}.deadline>i{color:#917d68}.deadline-rule{background:linear-gradient(90deg,#a87950,transparent)}.deadline p strong{color:#66754d}
+.stat-card{background:linear-gradient(145deg,#fbf7ef,#f4ecdf);border-color:#d9cbb8}.stat-top{color:#877768}.lilac{color:#8f6545;background:#eee1d1}.mint{color:#65754c;background:#e2e6d5}.blue{color:#7d5e43;background:#eadfce}.stat-card>strong{color:#3d2c21}.stat-card>small{color:#857466}.status-pill.off{color:#8a682f;background:#eee3c9}.status-pill.on{color:#5f7048;background:#dfe6d2}.schedule-time small{color:#8a5f40}
+.source-row{border-color:#d8c9b5}.section-heading h2{color:#3d2c21}.muted{color:#92816f}.source-chip{border-color:#dccdb9;background:#faf6ee;color:#715b47}.brand-mini{color:#fffaf2;background:#805a3c}.brand-mini.indeed{background:#9c7a5a;color:white}.brand-mini.naukri{color:#fff;background:#75815d}.brand-mini.cafe{color:#fff;background:#9b7355}.brand-mini.career{color:#fffaf2;background:#8c6948}.source-chip.more{color:#8f7d6b;border-color:#cbb8a0}
+.count-bubble{background:#eadbc9;color:#865c3d}.sort-select{color:#867563;border-color:#d8c8b3;background:#faf6ee}.sort-select b{color:#523c2c}
+.job-card{background:#fcf8f0;border-color:#dccdb9;box-shadow:0 3px 12px #71573a08}.job-card:hover{border-color:#b59676;box-shadow:0 7px 18px #71573a12}.company-avatar{background:#eee1d0;color:#805a3c}.job-title{color:#3c2b20}.company-name{color:#806e5d}.meta-pill{color:#715e4d;background:#f0e7da;border-color:#e2d4c1}.meta-pill.salary{color:#825c31;background:#f0e4cd;border-color:#e5d5b7}.meta-pill.fit{color:#5f7148;background:#e6eadc;border-color:#d5dec7}.job-summary{color:#77685b}.job-source{color:#8d7b69}.job-source a{color:#855b3c}.score-ring{border-color:#a27a57;color:#805838;box-shadow:0 0 17px #9b765018}.score-label,.confidence{color:#877664}
+.empty-state{border-color:#cfbda5;background:#f8f2e8}.empty-icon{background:#ebddc9;color:#875c3b}.empty-state h3{color:#4a3526}.empty-state p{color:#857365}.run-message{background:#e6eadc;border-color:#cbd5bd;color:#566744}.run-message.error{background:#f2e1d8;border-color:#dfc4b4;color:#8c4d3d}
+.profile-strip{border-color:#dacbb7;background:#fbf7ef}.profile-copy strong{color:#493527}.profile-copy p{color:#847365}.profile-editor{border-color:#d6c4ad;background:#f7efe3}.profile-editor label{color:#604a37}.profile-editor textarea{border-color:#d4c2aa;background:#fffaf2;color:#4c392b}.profile-editor textarea:focus{border-color:#a77c58}
+footer{color:#968472}.setup-dialog{border-color:#d1bea5;background:#fbf7ef;color:#3e2d22;box-shadow:0 22px 80px #543a221f}.setup-dialog::backdrop{background:#3e30269c;backdrop-filter:blur(4px)}.dialog-top h2{color:#3f2e22}.setup-intro{color:#806e5d}.setup-status{background:#f0e7da;color:#65503c}.setup-status i{background:#bbae9d}.setup-status i.ready{background:#718253;box-shadow:0 0 8px #71825355}.setup-dialog label{color:#5c4532}.setup-dialog label small{color:#8c7967}.setup-dialog input{border-color:#d5c2a9;background:#fffaf2;color:#423024}.setup-dialog input:focus{border-color:#9e7451}.dialog-actions .outline-btn{background:#f8f1e7}.setup-help{border-color:#ded0bd;color:#897765}.setup-help a{color:#855a3c}.setup-message{color:#5e7047}
+.selection-bar{display:flex;align-items:center;justify-content:space-between;min-height:43px;margin:-4px 0 12px;padding:7px 11px;border:1px solid #d8c9b5;border-radius:8px;background:#f7f0e5;color:#887563;font-size:10px}.selection-bar .primary-btn{margin-left:auto}.save-choice{display:flex;align-items:center;justify-content:center;gap:4px;margin-top:10px;color:#79583d;font-size:9px;cursor:pointer}.save-choice input{accent-color:#805a3c;width:13px;height:13px;margin:0}.saved-badge{display:inline-block;margin-top:10px;padding:4px 6px;border-radius:5px;background:#e3e8d8;color:#5d7046;font:500 8px var(--mono);letter-spacing:.4px}
