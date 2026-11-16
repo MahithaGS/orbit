@@ -1,0 +1,13 @@
+{
+  "name": "orbit-job-hunter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-first job discovery and resume matching app with Notion sync",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
