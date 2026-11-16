@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10121b" />
+  <title>Orbit — Job Hunter</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/warm-theme.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#top"><span class="brand-mark">✳</span><span>orbit<span class="brand-dot">.</span><small>JOB HUNTER</small></span></a>
+      <div class="nav-label">WORKSPACE</div>
+      <a class="nav-item active" href="#top"><span>◫</span> Overview</a>
+      <a class="nav-item" href="#matches"><span>⌕</span> Discover jobs <b id="nav-count">0</b></a>
+      <a class="nav-item" href="https://www.notion.so" target="_blank" rel="noreferrer"><span>▤</span> Notion pipeline ↗</a>
+      <div class="nav-label second-label">YOUR SEARCH</div>
+      <div class="sidebar-card">
+        <div class="live-dot"></div><span>Fresher · Entry-level</span>
+        <p>Hyderabad onsite/hybrid<br/>India-wide remote</p>
+        <div class="salary-tag">₹6 LPA+ priority</div>
+      </div>
+      <div class="sidebar-foot"><span class="avatar">M</span><div><strong>Job Hunter</strong><small>Personal workspace</small></div><button class="icon-btn" id="settings-open" title="Settings">⚙</button></div>
+    </aside>
+
+    <main id="top" class="main">
+      <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <b>Job Hunter</b></div><div class="top-actions"><span class="today" id="today-label"></span><button class="outline-btn" id="settings-open-top">⚙ <span>Setup</span></button></div></header>
+
+      <section class="welcome">
+        <div class="welcome-copy"><div class="eyebrow"><span class="pulse"></span> PERSONAL JOB DISCOVERY</div><h1>Find the right<br/><em>next opportunity.</em></h1><p>Daily search across career pages and job boards, ranked against your resume. Your applications stay organized in Notion.</p>
+          <div class="welcome-actions"><button class="primary-btn" id="run-now"><span>✳</span> Run job search <span class="arrow">↗</span></button><button class="text-btn" id="scroll-matches">View latest matches <span>↓</span></button></div>
+        </div>
+        <div class="orbit-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="planet"><span>AI</span><i>✦</i></div><div class="orbit-caption">YOUR SKILLS<br/><b>IN ORBIT</b></div><span class="spark spark-one">✦</span><span class="spark spark-two">✧</span></div>
+        <div class="deadline"><span>SEARCH DEADLINE</span><b>16 <small>DEC</small></b><i>2026</i><div class="deadline-rule"></div><p><strong id="days-left">30</strong> days remaining</p></div>
+      </section>
+
+      <section class="stats" aria-label="Search summary">
+        <article class="stat-card"><div class="stat-top"><span>TRACKED MATCHES</span><span class="stat-icon lilac">⌕</span></div><strong id="stat-matches">—</strong><small>verified or reviewable leads</small></article>
+        <article class="stat-card"><div class="stat-top"><span>TOP RESUME FIT</span><span class="stat-icon mint">↗</span></div><strong id="stat-fit">—<small>%</small></strong><small id="stat-fit-label">Run a search to rank jobs</small></article>
+        <article class="stat-card"><div class="stat-top"><span>ADDED TO NOTION</span><span class="stat-icon blue">▤</span></div><strong id="stat-notion">—</strong><small>saved to Application Pipeline</small></article>
+        <article class="stat-card scheduler-card"><div class="stat-top"><span>DAILY JOB HUNTER</span><span id="scheduler-indicator" class="status-pill off">PAUSED</span></div><strong class="schedule-time">09:00 <small>IST</small></strong><div class="schedule-bottom"><small>Through 15 Dec 2026</small><button id="scheduler-toggle" class="switch" role="switch" aria-checked="false" aria-label="Toggle daily job hunter"><i></i></button></div></article>
+      </section>
+
+      <section class="source-row"><div class="section-heading"><div><span class="eyebrow">DISCOVERY NETWORK</span><h2>Searching across the web</h2></div><span class="muted" id="query-count">9 targeted searches</span></div><div class="source-chips"><span class="source-chip"><i class="brand-mini">in</i> LinkedIn</span><span class="source-chip"><i class="brand-mini indeed">i</i> Indeed</span><span class="source-chip"><i class="brand-mini naukri">n</i> Naukri</span><span class="source-chip"><i class="brand-mini cafe">h</i> HiringCafe</span><span class="source-chip"><i class="brand-mini career">⌂</i> Company career pages</span><span class="source-chip more">+ broader web search</span></div></section>
+
+      <section id="matches" class="matches-section">
+        <div class="section-heading matches-heading"><div><span class="eyebrow">MATCHED TO YOUR PROFILE</span><h2>Top job matches <span class="count-bubble" id="result-count">0</span></h2></div><div class="sort-select">Sorted by <b>Resume match</b> <span>⌄</span></div></div>
+        <div class="selection-bar"><span id="selection-count">Select jobs you want in Notion.</span><button class="primary-btn small hidden" id="save-selected">Add selected to Notion <span class="arrow">↗</span></button></div>
+        <div id="run-message" class="run-message hidden"></div>
+        <div id="job-list" class="job-list"><div class="empty-state"><div class="empty-icon">✳</div><h3>Your next role starts here</h3><p>Run a search to collect current jobs and compare them with your AI/ML, software, data, and automation experience.</p><button class="primary-btn small" id="run-empty">Run job search <span class="arrow">↗</span></button></div></div>
+      </section>
+
+      <section class="profile-strip"><div class="profile-avatar">M</div><div class="profile-copy"><span class="eyebrow">MATCH PROFILE</span><strong>AI/ML undergraduate · 2026 graduate</strong><p>RealPage internship · Python · ML / Deep Learning · LLMs · Computer Vision · SQL</p></div><button id="profile-toggle" class="outline-btn">Edit profile</button></section>
+      <section class="profile-editor hidden" id="profile-editor"><label for="profile-skills">Skills and keywords used for matching</label><textarea id="profile-skills" rows="3"></textarea><button id="profile-save" class="primary-btn small">Save matching profile</button><span id="profile-save-msg"></span></section>
+
+      <footer><span>ORBIT JOB HUNTER</span><span>Searches public listings · Never applies or contacts recruiters for you</span></footer>
+    </main>
+  </div>
+
+  <dialog id="setup-dialog" class="setup-dialog">
+    <form method="dialog" class="dialog-top"><div><span class="eyebrow">LOCAL APP SETUP</span><h2>Connect your search</h2></div><button class="icon-btn" value="cancel" aria-label="Close setup">×</button></form>
+    <p class="setup-intro">API keys stay on this computer and are sent from the local server. Web search is needed to run discovery; Notion is only needed when you choose jobs to save.</p>
+    <div class="setup-status"><span><i id="search-dot"></i> Web search</span><span><i id="notion-dot"></i> Notion sync</span></div>
+    <label for="brave-key">Brave Search API key <small>required for current web discovery</small></label><input id="brave-key" type="password" autocomplete="off" placeholder="Paste API key" />
+    <label for="notion-key">Notion integration token <small>create an internal integration and share the Application Pipeline with it</small></label><input id="notion-key" type="password" autocomplete="off" placeholder="secret_…" />
+    <label for="notion-source">Notion data source ID</label><input id="notion-source" value="" />
+    <div class="dialog-actions"><button type="button" class="outline-btn" id="notion-test">Test Notion</button><button type="button" class="primary-btn small" id="settings-save">Save settings</button></div>
+    <p class="setup-help">Search provider docs: <a href="https://api-dashboard.search.brave.com/documentation" target="_blank" rel="noreferrer">Brave Search API</a>. Notion database: <a href="https://www.notion.so" target="_blank" rel="noreferrer">Application Pipeline</a>.</p>
+    <div id="setup-message" class="setup-message"></div>
+  </dialog>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
